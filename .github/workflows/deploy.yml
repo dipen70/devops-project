@@ -22,3 +22,5 @@ jobs:
           vercel-args: --prod # Deploy directly to production
           scope: ${{ secrets.VERCEL_ORG_ID }}
 
+      - name: Post-deployment message 
+        run: echo "Deployment to Vercel production completed successfully!"
